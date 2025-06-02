@@ -369,7 +369,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
         if (dataL)    c_free(dataL);
         if (dataU)    c_free(dataU);
         if (dataP)    free(dataP);
-        if (dataA)    c_free(dataA);
+        if (dataA)    free(dataA);
 
         // Report error (if any)
         if(exitflag){
