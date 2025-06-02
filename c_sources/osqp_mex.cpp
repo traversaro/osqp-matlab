@@ -368,7 +368,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
         if (dataQ)    c_free(dataQ);
         if (dataL)    c_free(dataL);
         if (dataU)    c_free(dataU);
-        if (dataP)    c_free(dataP);
+        if (dataP)    free(dataP);
         if (dataA)    c_free(dataA);
 
         // Report error (if any)
